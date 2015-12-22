@@ -1,0 +1,30 @@
+" Use Vim settings, instead of Vi.
+set nocompatible
+set relativenumber
+
+inoremap jk <Esc>
+let mapleader = ","
+nnoremap <leader>w <C-w>
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+function! ConfigureLanguage(lang)
+    let l:filename = "lang_config/" . a:lang . ".vim"
+    exec "runtime " . l:filename
+endfunction
+
+function! ConfigurePlugin(filename)
+    let l:filename = "plug_config/" . l:filename . ".vim"
+    exec "runtime " . l:filename
+endfunction
+
+let &runtimepath .= ",$HOME/.dotfiles/vim"
+
+"Plugin Configuration
+call ConfigurePlugin("vim-plug")
+call ConfigurePlugin("syntastic")
+call ConfigurePlugin("ctrlp")
+" Add in A.vim for switching between .h and .c files
+
+" Language Configuration
