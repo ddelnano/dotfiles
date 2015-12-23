@@ -2,6 +2,7 @@
 My dotfile configuration
 
 ## Todo
+- Add other configuration -- not just vim
 - Make this configuration portable across OS X and Linux
 - Make any config that can be used in Xcode or Jetbrains IDEs available
 
