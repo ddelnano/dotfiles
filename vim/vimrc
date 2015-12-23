@@ -1,5 +1,13 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+
 " Use Vim settings, instead of Vi.
 set nocompatible
+filetype on
+set ff=unix
 set relativenumber
 
 inoremap jk <Esc>
@@ -9,22 +17,33 @@ nnoremap <leader>w <C-w>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-function! ConfigureLanguage(lang)
-    let l:filename = "lang_config/" . a:lang . ".vim"
-    exec "runtime " . l:filename
+function! LanguageConfig(filename)
+  let l:filename = "lang_config/" . a:filename . ".vim"
+  exec "runtime " . l:filename
 endfunction
 
-function! ConfigurePlugin(filename)
-    let l:filename = "plug_config/" . l:filename . ".vim"
-    exec "runtime " . l:filename
+function! PluginConfig(filename)
+  let l:filename = "plugin_config/" . a:filename . ".vim"
+  exec "runtime " . l:filename
 endfunction
 
-let &runtimepath .= ",$HOME/.dotfiles/vim"
+let &runtimepath .= ",$HOME/Code/dotfiles/vim"
+
+source $HOME/.vim/autoload/plug.vim
+
+"Solarized theme
+source $HOME/Code/dotfiles/vim/colors/config.vim
+
+augroup vimrcEx
+  autocmd!
 
 "Plugin Configuration
-call ConfigurePlugin("vim-plug")
-call ConfigurePlugin("syntastic")
-call ConfigurePlugin("ctrlp")
+call PluginConfig("vim-plug")
+call PluginConfig("syntastic")
+call PluginConfig("ctrlp")
 " Add in A.vim for switching between .h and .c files
 
+augroup END
 " Language Configuration
+
+colorscheme solarized

@@ -11,7 +11,7 @@ source 'scripts/helpers.sh'
 # Vim Setup
 
 if ask_response 'Do you want to install vim configuration (y/n)'; then
-    ln -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
+    ln -sf $HOME/Code/dotfiles/vim/vimrc $HOME/.vimrc
     echo "Installing vim configuration"
 else
     echo "Ignoring vim configuration"
