@@ -14,4 +14,7 @@ Plug 'scrooloose/syntastic'    " Linting
 Plug 'ctrlpvim/ctrlp.vim'      " Fuzzy file search
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'altercation/vim-colors-solarized'  " Solarized color theme
+Plug 'SirVer/ultisnips'                  " Vim snippet engine
+Plug 'honza/vim-snippets'                " Vim code snippets
+
 call plug#end()
