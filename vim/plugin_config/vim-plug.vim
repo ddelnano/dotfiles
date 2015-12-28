@@ -15,5 +15,6 @@ Plug 'ctrlpvim/ctrlp.vim'      " Fuzzy file search
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'altercation/vim-colors-solarized'  " Solarized color theme
 Plug 'SirVer/ultisnips'                  " Vim snippet engine
+Plug 'tpope/vim-surround'                  " Delete surrounding characters
 
 call plug#end()
