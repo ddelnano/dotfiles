@@ -17,6 +17,8 @@ nnoremap <leader>w <C-w>
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+" Toggle paste mode
+set pastetoggle=<F10>
 
 function! LanguageConfig(filename)
   let l:filename = "lang_config/" . a:filename . ".vim"
