@@ -16,7 +16,7 @@ add into my vim workflow.
   - [ ] HTML editing
   - [ ] CSS / SCSS
 - [ ] Status line [airline.vim](https://github.com/bling/vim-airline)
-- [ ] Vim [Surround](https://github.com/tpope/vim-surround)
+- [x] Vim [Surround](https://github.com/tpope/vim-surround)
 - [ ] [fugitive.vim](https://github.com/tpope/vim-fugitive)
 - [ ] [Git Gutter](https://github.com/airblade/vim-gitgutter)
 - [ ] Github Issues [github-issues.vim](https://github.com/jaxbot/github-issues.vim)
