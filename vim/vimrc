@@ -45,6 +45,7 @@ call PluginConfig("vim-plug")
 call PluginConfig("syntastic")
 call PluginConfig("ctrlp")
 call PluginConfig("ultisnips")
+call PluginConfig("vim-commentary")
 " Add in A.vim for switching between .h and .c files
 
 augroup END

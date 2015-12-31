@@ -22,7 +22,7 @@ add into my vim workflow.
 - [ ] [projectionist.vim](https://github.com/tpope/vim-projectionist)
 - [ ] [Targets.vim](https://github.com/wellle/targets.vim)
   - Adds additional text objects
-- [ ] [commentary.vim](https://github.com/tpope/vim-commentary)
+- [x] [commentary.vim](https://github.com/tpope/vim-commentary)
 - Ctags
   - [ ] [Ctags.vim](https://github.com/vim-scripts/ctags.vim)
   - [ ] [Tagbar](https://github.com/majutsushi/tagbar)
