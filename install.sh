@@ -20,3 +20,9 @@ if ask_response 'Do you want to install vim configuration (y/n)'; then
 else
     echo "Ignoring vim configuration"
 fi
+
+if ask_response 'Do you want to install tmux configuration (y/n)'; then
+    ln -sf $HOME/Code/dotfiles/tmux/tmux.conf $HOME/.tmux.conf
+else
+    echo "Ignoring tmux configuration"
+fi
