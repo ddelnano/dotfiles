@@ -2,7 +2,6 @@
 My dotfile configuration
 
 ## Todo
-- Install script requires vim-plug already installed
 - Add other configuration -- not just vim
 - Make this configuration portable across OS X and Linux
 - Make any config that can be used in Xcode or Jetbrains IDEs available
