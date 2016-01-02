@@ -39,7 +39,7 @@ add into my vim workflow.
   - [ ] [Super Tab](https://github.com/ervandew/supertab)
     - According to YCM is useless but check out regardless
 - Tmux Integration
-  - [ ] [Vim tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
+  - [x] [Vim tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
   - [ ] [tmuxline.vim](https://github.com/edkolev/tmuxline.vim)
 - Miscellaneous
   - [ ] [Editorconfig.vim](https://github.com/editorconfig/editorconfig-vim)
