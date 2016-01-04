@@ -20,6 +20,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
 Plug 'ternjs/tern_for_vim'
+Plug 'scrooloose/nerdtree'
 
 " Test for php autocompletion
 Plug 'Shougo/vimproc.vim',    { 'do': 'make'}

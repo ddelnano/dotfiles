@@ -48,6 +48,7 @@ call PluginConfig("ctrlp")
 call PluginConfig("ultisnips")
 call PluginConfig("vim-commentary")
 call PluginConfig("phpcomplete-extended")
+call PluginConfig("nerdtree")
 " Add in A.vim for switching between .h and .c files
 
 augroup END
