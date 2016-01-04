@@ -43,9 +43,11 @@ augroup vimrcEx
 "Plugin Configuration
 call PluginConfig("vim-plug")
 call PluginConfig("syntastic")
+call PluginConfig("ycm")
 call PluginConfig("ctrlp")
 call PluginConfig("ultisnips")
 call PluginConfig("vim-commentary")
+call PluginConfig("phpcomplete-extended")
 " Add in A.vim for switching between .h and .c files
 
 augroup END

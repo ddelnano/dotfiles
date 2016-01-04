@@ -18,5 +18,12 @@ Plug 'SirVer/ultisnips'                  " Vim snippet engine
 Plug 'tpope/vim-surround'                  " Delete surrounding characters
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
+Plug 'bling/vim-airline'
+Plug 'ternjs/tern_for_vim'
+
+" Test for php autocompletion
+Plug 'Shougo/vimproc.vim',    { 'do': 'make'}
+Plug 'Shougo/unite.vim'
+Plug 'm2mdas/phpcomplete-extended'
 
 call plug#end()
