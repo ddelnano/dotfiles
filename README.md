@@ -5,6 +5,7 @@ My dotfile configuration
 - YCM install
   - Make install on different operating systems build it correctly 
 - Assign keymap to make window resizing painless
+- Fix pman to show php documentation
 - Add other configuration -- not just vim
 - Make this configuration portable across OS X and Linux
 - Make any config that can be used in Xcode or Jetbrains IDEs available
@@ -17,6 +18,9 @@ add into my vim workflow.
 - Language Support
   - [ ] HTML editing
   - [ ] CSS / SCSS
+- Framework Support
+  - [ ] Laravel
+    - [Blade](https://github.com/jwalton512/vim-blade)
 - [ ] Status line [airline.vim](https://github.com/bling/vim-airline)
 - [x] Vim [Surround](https://github.com/tpope/vim-surround)
 - [ ] [fugitive.vim](https://github.com/tpope/vim-fugitive)
