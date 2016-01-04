@@ -4,6 +4,7 @@ My dotfile configuration
 ## Todo
 - YCM install
   - Make install on different operating systems build it correctly 
+- Assign keymap to make window resizing painless
 - Add other configuration -- not just vim
 - Make this configuration portable across OS X and Linux
 - Make any config that can be used in Xcode or Jetbrains IDEs available
