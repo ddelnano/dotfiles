@@ -2,6 +2,7 @@
 My dotfile configuration
 
 ## Todo
+- Move all generic keymappings to their own file, instead of dumping in vimrc
 - YCM install
   - Make install on different operating systems build it correctly 
 - Assign keymap to make window resizing painless
