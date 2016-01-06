@@ -16,3 +16,12 @@ nnoremap <leader>qq :qall<cr>
 nnoremap <leader>qw :wqall<cr>
 " Toggle paste mode
 set pastetoggle=<F10>
+
+
+" Create directories if they don't already exist
+silent !mkdir -p $HOME/.vim/backup
+silent !mkdir -p $HOME/.vim/swap
+
+" Swap files out of the project root
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
