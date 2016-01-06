@@ -3,8 +3,10 @@ My dotfile configuration
 
 ## Todo
 - Understand ternjs vim plugin better, works great for browser api autocompletion but not for nodejs
-- YCM install
-  - Make install on different operating systems build it correctly 
+- YCM
+    - javascript autocompletion
+    - YCM install
+      - Make install on different operating systems build it correctly 
 - Assign keymap to make window resizing painless
 - Fix pman to show php documentation
 - Add other configuration -- not just vim
