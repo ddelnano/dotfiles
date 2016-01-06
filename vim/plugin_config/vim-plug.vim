@@ -19,8 +19,11 @@ Plug 'tpope/vim-surround'                  " Delete surrounding characters
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " TODO see if npm install is run in tern plugin directory
 Plug 'scrooloose/nerdtree'
+
+" nodejs
+" Plug 'moll/vim-node'
 
 " Test for php autocompletion
 Plug 'Shougo/vimproc.vim',    { 'do': 'make'}
