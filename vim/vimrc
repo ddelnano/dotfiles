@@ -40,5 +40,6 @@ call PluginConfig("tern_for_vim")
 
 augroup END
 " Language Configuration
+call LanguageConfig("markdown")
 
 colorscheme solarized
