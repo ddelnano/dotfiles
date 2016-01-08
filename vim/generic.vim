@@ -10,14 +10,20 @@ inoremap jk <Esc>
 let mapleader = ","
 nnoremap <leader>w <C-w>
 
+" Allow writing files that need sudo priviledges
+" after opening them
+cmap w!! :w !sudo tee %
+
+" Fast editing and sourcing of vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" Fast way to save / close all windows
 nnoremap <leader>qq :qall<cr>
 nnoremap <leader>qw :wqall<cr>
+
 " Toggle paste mode
 set pastetoggle=<F10>
-
 
 " Create directories if they don't already exist
 silent !mkdir -p $HOME/.vim/backup

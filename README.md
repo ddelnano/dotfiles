@@ -2,6 +2,8 @@
 My dotfile configuration
 
 ## Todo
+- Find a way to only install plugins if certain depedencies are met
+  - phpcomplete fails if php is not already installed
 - Understand ternjs vim plugin better, works great for browser api autocompletion but not for nodejs
 - YCM
   - javascript autocompletion
