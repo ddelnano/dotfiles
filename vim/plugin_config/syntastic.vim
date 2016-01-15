@@ -9,3 +9,4 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_php_checkers = ["php"]
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_json_checkers = ["jsonlint"]
