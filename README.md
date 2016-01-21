@@ -2,6 +2,16 @@
 My dotfile configuration
 
 ## Todo
+- Install depedencies
+  - jsonlint
+- Try super tab
+- fzf as a replacement for ctrlp
+- Try cscope
+- Development help
+  - php
+    - [ ] Navigate / view all methods in a file 
+    - Learn to use phpcomplete.vim better
+- Fix tmux copying issues
 - Find a way to only install plugins if certain depedencies are met
   - phpcomplete fails if php is not already installed
 - Understand ternjs vim plugin better, works great for browser api autocompletion but not for nodejs
