@@ -36,6 +36,7 @@ call PluginConfig("vim-commentary")
 call PluginConfig("phpcomplete-extended")
 call PluginConfig("nerdtree")
 call PluginConfig("tern_for_vim")
+call PluginConfig("multiple-cursors")
 " Add in A.vim for switching between .h and .c files
 
 augroup END

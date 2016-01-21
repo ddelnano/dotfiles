@@ -21,6 +21,7 @@ Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }  " TODO see if npm install is run in tern plugin directory
 Plug 'scrooloose/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
 
 " nodejs
 " Plug 'moll/vim-node'
