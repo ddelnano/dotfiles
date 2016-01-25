@@ -32,3 +32,6 @@ silent !mkdir -p $HOME/.vim/swap
 " Swap files out of the project root
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
+
+" Allow <C-a> for letters
+set nrformats+=alpha
