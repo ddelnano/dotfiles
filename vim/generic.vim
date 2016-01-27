@@ -35,3 +35,5 @@ set directory=~/.vim/swap//
 
 " Allow <C-a> for letters
 set nrformats+=alpha
+
+set backspace=indent,eol,start
