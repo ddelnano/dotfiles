@@ -37,3 +37,6 @@ set directory=~/.vim/swap//
 set nrformats+=alpha
 
 set backspace=indent,eol,start
+
+" Use incremental search
+set incsearch
