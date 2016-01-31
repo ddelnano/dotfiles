@@ -44,3 +44,7 @@ set incsearch
 " Add highlighted search and mapping to remove highlighing
 set hlsearch
 nnoremap <leader><space> :nohlsearch<cr>
+
+" Split windows below and to the right
+set splitbelow
+set splitright
