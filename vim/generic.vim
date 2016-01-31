@@ -40,3 +40,7 @@ set backspace=indent,eol,start
 
 " Use incremental search
 set incsearch
+
+" Add highlighted search and mapping to remove highlighing
+set hlsearch
+nnoremap <leader><space> :nohlsearch<cr>
