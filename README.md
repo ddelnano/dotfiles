@@ -2,6 +2,7 @@
 My dotfile configuration
 
 ## Todo
+- Make easy mapping for editing any file in this repo from vim
 - Install depedencies
   - jsonlint
 - Try super tab
