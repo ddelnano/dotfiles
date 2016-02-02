@@ -2,6 +2,7 @@
 My dotfile configuration
 
 ## Todo
+- Fix pman with php files
 - Make easy mapping for editing any file in this repo from vim
 - Install depedencies
   - jsonlint
