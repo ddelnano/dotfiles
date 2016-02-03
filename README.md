@@ -11,7 +11,8 @@ My dotfile configuration
 - Try cscope
 - Development help
   - php
-    - [ ] Navigate / view all methods in a file 
+    - [x] Navigate / view all methods in a file 
+      - CtrlP -- :CtrlPBufTag
     - Learn to use phpcomplete.vim better
 - Fix tmux copying issues
 - Find a way to only install plugins if certain depedencies are met
