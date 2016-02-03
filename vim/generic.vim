@@ -10,7 +10,7 @@ inoremap jk <Esc>
 let mapleader = ","
 nnoremap <leader>w <C-w>
 
-" Allow writing files that need sudo priviledges
+" Allow writing files that need sudo privileges
 " after opening them
 cmap w!! :w !sudo tee %
 
@@ -41,10 +41,14 @@ set backspace=indent,eol,start
 " Use incremental search
 set incsearch
 
-" Add highlighted search and mapping to remove highlighing
+" Add highlighted search and mapping to remove highlighting
 set hlsearch
 nnoremap <leader><space> :nohlsearch<cr>
 
 " Split windows below and to the right
 set splitbelow
 set splitright
+
+" Set the dictionary and spelling auto complete
+set dictionary=/usr/share/dict/words
+set complete+=k
