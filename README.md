@@ -72,4 +72,9 @@ add into my vim workflow.
   - [ ] [devicons](https://github.com/ryanoasis/vim-devicons)
   - [ ] [vim-pencil](https://github.com/reedes/vim-pencil)
   - [ ] [gruvbox](https://github.com/morhetz/gruvbox)
+
+### Tmux
+- [ ] Tmux auto window resizing
+- [ ] Tmux plugins
+- [ ] Tmux copying to system clipboard
     - Retro groove color scheme for Vim
