@@ -67,7 +67,7 @@ add into my vim workflow.
   - [x] [Vim tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
   - [ ] [tmuxline.vim](https://github.com/edkolev/tmuxline.vim)
 - Miscellaneous
-  - [ ] [Multiple cursors](https://github.com/terryma/vim-multiple-cursors)
+  - [x] [Multiple cursors](https://github.com/terryma/vim-multiple-cursors)
   - [ ] [Editorconfig.vim](https://github.com/editorconfig/editorconfig-vim)
   - [ ] [devicons](https://github.com/ryanoasis/vim-devicons)
   - [ ] [vim-pencil](https://github.com/reedes/vim-pencil)
