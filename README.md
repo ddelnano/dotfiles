@@ -2,6 +2,7 @@
 My dotfile configuration
 
 ## Todo
+- CtrlP to create new files in directories with not files? Does not currently work
 - Fix pman with php files
 - Make easy mapping for editing any file in this repo from vim
 - Install depedencies
@@ -67,6 +68,7 @@ add into my vim workflow.
   - [x] [Vim tmux navigator](https://github.com/christoomey/vim-tmux-navigator)
   - [ ] [tmuxline.vim](https://github.com/edkolev/tmuxline.vim)
 - Miscellaneous
+  - [ ] [vim-lion](https://github.com/tommcdo/vim-lion)
   - [x] [Multiple cursors](https://github.com/terryma/vim-multiple-cursors)
   - [ ] [Editorconfig.vim](https://github.com/editorconfig/editorconfig-vim)
   - [ ] [devicons](https://github.com/ryanoasis/vim-devicons)
