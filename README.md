@@ -12,6 +12,9 @@ My dotfile configuration
 - Try cscope
 - Development help
   - php
+    - [ ] Auto importing namespaces 
+      - [ ] Patched [ctags](https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags)
+      - [ ] [importing](https://github.com/arnaud-lb/vim-php-namespace)
     - [x] Navigate / view all methods in a file 
       - CtrlP -- :CtrlPBufTag
     - Learn to use phpcomplete.vim better
