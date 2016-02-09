@@ -1,8 +1,8 @@
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<leader>e"
-let g:UltiSnipsJumpForwardTrigger="<leader>b"
-let g:UltiSnipsJumpBackwardTrigger="<leader>z"
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<C-p>"
 
 " Open UtilSnips edit in vertical split
 let g:UltiSnipsEditSplit="vertical"
