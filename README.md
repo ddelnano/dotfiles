@@ -30,7 +30,6 @@ My dotfile configuration
     - Make install on different operating systems build it correctly 
 - Assign keymap to make window resizing painless
 - Fix pman to show php documentation
-- Add other configuration -- not just vim
 - Make this configuration portable across OS X and Linux
 - Make any config that can be used in Xcode or Jetbrains IDEs available
 
