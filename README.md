@@ -14,7 +14,8 @@ My dotfile configuration
   - php
     - [ ] Auto importing namespaces 
       - [ ] Patched [ctags](https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags)
-      - [ ] [importing](https://github.com/arnaud-lb/vim-php-namespace)
+      - [x] [importing](https://github.com/arnaud-lb/vim-php-namespace)
+        - [ ] Look into autoimporting anything on the line of the cursor
     - [x] Navigate / view all methods in a file 
       - CtrlP -- :CtrlPBufTag
     - Learn to use phpcomplete.vim better
