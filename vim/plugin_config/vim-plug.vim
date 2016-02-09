@@ -22,7 +22,6 @@ Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript',  { 'for': 'javascript' }
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
-
-
+Plug 'wellle/targets.vim'
 
 call plug#end()

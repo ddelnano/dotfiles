@@ -18,6 +18,8 @@ My dotfile configuration
     - [x] Navigate / view all methods in a file 
       - CtrlP -- :CtrlPBufTag
     - Learn to use phpcomplete.vim better
+  - javascript
+    - [ ] Syntastic flow linter
 - Fix tmux copying issues
 - Find a way to only install plugins if certain depedencies are met
   - phpcomplete fails if php is not already installed
@@ -37,6 +39,8 @@ My dotfile configuration
 This will serve as a list of useful plugins I find that I plan to eventually 
 add into my vim workflow.  
 
+- Macros
+- [ ] [marvim](http://www.vim.org/scripts/script.php?script_id=2154)
 - Language Support
   - [ ] HTML editing
   - [ ] CSS / SCSS
@@ -49,7 +53,8 @@ add into my vim workflow.
 - [ ] [Git Gutter](https://github.com/airblade/vim-gitgutter)
 - [ ] Github Issues [github-issues.vim](https://github.com/jaxbot/github-issues.vim)
 - [ ] [projectionist.vim](https://github.com/tpope/vim-projectionist)
-- [ ] [Targets.vim](https://github.com/wellle/targets.vim)
+- [x] [Targets.vim](https://github.com/wellle/targets.vim)
+  - [ ] Learn more about this
   - Adds additional text objects
 - [x] [commentary.vim](https://github.com/tpope/vim-commentary)
 - Ctags
@@ -62,6 +67,7 @@ add into my vim workflow.
   - [ ] [vim-signature](https://github.com/kshenoy/vim-signature)
 - Search
   - [ ] [Ag.vim](https://github.com/rking/ag.vim)
+  - [ ] [greplace.vim](https://github.com/skwp/greplace.vim)
   - [ ] [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
   - [ ] [dash.vim](https://github.com/rizzatti/dash.vim)
 - Autocompletion
