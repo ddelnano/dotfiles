@@ -65,6 +65,7 @@ add into my vim workflow.
   - [ ] [EasyMotion](https://github.com/easymotion/vim-easymotion)
   - [ ] [Numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
   - [ ] [vim-signature](https://github.com/kshenoy/vim-signature)
+  - [ ] [Gundo.vim](https://github.com/sjl/gundo.vim)
 - Search
   - [ ] [Ag.vim](https://github.com/rking/ag.vim)
   - [ ] [greplace.vim](https://github.com/skwp/greplace.vim)
