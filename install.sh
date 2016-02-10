@@ -26,3 +26,9 @@ if ask_response 'Do you want to install tmux configuration (y/n)'; then
 else
     echo "Ignoring tmux configuration"
 fi
+
+if ask_response 'Do you want to install git configuration (y/n)'; then
+    ln -sf $HOME/Code/dotfiles/git/gitconfig $HOME/.gitconfig
+else
+    echo "Ignoring .gitconfig"
+fi
