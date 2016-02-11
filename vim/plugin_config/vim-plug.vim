@@ -21,7 +21,6 @@ Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript',  { 'for': 'javascript' }
 Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'wellle/targets.vim'
 Plug 'arnaud-lb/vim-php-namespace'
 
