@@ -2,6 +2,7 @@
 My dotfile configuration
 
 ## Todo
+- Allow vim to save itself when switching tmux panes
 - CtrlP to create new files in directories with not files? Does not currently work
 - Fix pman with php files
 - Make easy mapping for editing any file in this repo from vim
