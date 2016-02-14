@@ -8,6 +8,7 @@ My dotfile configuration
 - Make easy mapping for editing any file in this repo from vim
 - Install depedencies
   - jsonlint
+  - phpctags for tagbar
 - Try super tab
 - fzf as a replacement for ctrlp
 - Try cscope

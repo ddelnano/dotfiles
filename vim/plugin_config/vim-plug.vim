@@ -27,5 +27,7 @@ Plug 'tpope/vim-vinegar'
 " vim-misc is necessary for easytags
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-easytags'
+Plug 'majutsushi/tagbar'
+Plug 'vim-php/tagbar-phpctags.vim', { 'for': 'php' }
 
 call plug#end()
