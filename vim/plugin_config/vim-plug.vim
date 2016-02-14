@@ -22,6 +22,7 @@ Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript',  { 'for': 'javascript' }
 Plug 'scrooloose/nerdtree'
 Plug 'wellle/targets.vim'
-Plug 'arnaud-lb/vim-php-namespace'
+Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
