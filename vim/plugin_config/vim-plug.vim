@@ -24,5 +24,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'wellle/targets.vim'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'tpope/vim-vinegar'
+" vim-misc is necessary for easytags
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-easytags'
 
 call plug#end()

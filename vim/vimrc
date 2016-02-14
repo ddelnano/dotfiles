@@ -36,6 +36,8 @@ call PluginConfig("vim-commentary")
 call PluginConfig("nerdtree")
 call PluginConfig("multiple-cursors")
 call PluginConfig("vim-php-namespace")
+call PluginConfig("vim-easytags")
+
 " Add in A.vim for switching between .h and .c files
 
 augroup END
