@@ -50,8 +50,8 @@ set splitbelow
 set splitright
 
 " Set the dictionary and spelling auto complete
-set dictionary=/usr/share/dict/words
-set complete+=k
+" set dictionary=/usr/share/dict/words
+" set complete+=k
 
 
 " Allow use of the mouse

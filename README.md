@@ -2,6 +2,8 @@
 My dotfile configuration
 
 ## Todo
+- Read learn vimscript the hard way
+- Add abbreviations to vimrc for common mispellings
 - Allow vim to save itself when switching tmux panes
 - CtrlP to create new files in directories with not files? Does not currently work
 - Fix pman with php files
