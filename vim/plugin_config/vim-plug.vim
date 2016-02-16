@@ -29,5 +29,6 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-easytags'
 Plug 'majutsushi/tagbar'
 Plug 'vim-php/tagbar-phpctags.vim', { 'for': 'php' }
+Plug 'AndrewRadev/splitjoin.vim'
 
 call plug#end()
