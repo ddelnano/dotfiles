@@ -43,11 +43,13 @@ My dotfile configuration
 This will serve as a list of useful plugins I find that I plan to eventually 
 add into my vim workflow.  
 
+- [sideways.vim](https://github.com/AndrewRadev/sideways.vim)
 - Macros
 - [ ] [marvim](http://www.vim.org/scripts/script.php?script_id=2154)
 - Language Support
   - [ ] HTML editing
   - [ ] CSS / SCSS
+  - [ ] [Emmet.vim](https://github.com/mattn/emmet-vim)
 - Framework Support
   - [ ] Laravel
     - [Blade](https://github.com/jwalton512/vim-blade)
