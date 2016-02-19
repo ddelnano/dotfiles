@@ -92,6 +92,7 @@ add into my vim workflow.
   - [ ] [gruvbox](https://github.com/morhetz/gruvbox)
 
 ### Tmux
+- [ ] Autostart multiple tmux sessions
 - [ ] Tmux auto window resizing
 - [ ] Tmux plugins
 - [ ] Tmux copying to system clipboard
