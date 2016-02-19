@@ -30,5 +30,6 @@ Plug 'xolox/vim-easytags'
 Plug 'majutsushi/tagbar'
 Plug 'vim-php/tagbar-phpctags.vim', { 'for': 'php' }
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'kylef/apiblueprint.vim'
 
 call plug#end()
