@@ -7,10 +7,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 
-
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/syntastic'    " Linting 
+" Plug 'scrooloose/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'      " Fuzzy file search
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'altercation/vim-colors-solarized'  " Solarized color theme
@@ -20,7 +19,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
 Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript',  { 'for': 'javascript' }
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'wellle/targets.vim'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'tpope/vim-vinegar'
@@ -31,5 +30,8 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-php/tagbar-phpctags.vim', { 'for': 'php' }
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kylef/apiblueprint.vim'
+Plug 'ddelnano/implement.vim', { 'for': 'php' }
+" Plug 'flowtype/vim-flow', { 'for': 'javascript' }
+Plug 'benekastah/neomake'
 
 call plug#end()

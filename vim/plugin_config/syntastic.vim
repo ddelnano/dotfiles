@@ -1,3 +1,7 @@
+" TODO: This is currently not used in favor of Neomake
+" Since I had issues with Neomake working correctly this
+" will be kept incase I need to reinstall Syntastic
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
