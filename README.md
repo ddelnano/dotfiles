@@ -2,6 +2,10 @@
 My dotfile configuration
 
 ## Todo
+- Add bash and zsh stuff to repo
+- Figure out better solution for eslint and jscs, it is very slow
+  - Always use eslint and allow the option of running jscs
+- Use ctags with javascript
 - Read learn vimscript the hard way
 - Add abbreviations to vimrc for common mispellings
 - Allow vim to save itself when switching tmux panes
@@ -16,8 +20,8 @@ My dotfile configuration
 - Try cscope
 - Development help
   - php
-    - [ ] Auto importing namespaces 
-      - [ ] Patched [ctags](https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags)
+    - [x] Auto importing namespaces 
+      - [x] Patched [ctags](https://github.com/shawncplus/phpcomplete.vim/wiki/Patched-ctags)
       - [x] [importing](https://github.com/arnaud-lb/vim-php-namespace)
         - [ ] Look into autoimporting anything on the line of the cursor
     - [x] Navigate / view all methods in a file 
@@ -43,6 +47,7 @@ My dotfile configuration
 This will serve as a list of useful plugins I find that I plan to eventually 
 add into my vim workflow.  
 
+- [vim-flow](https://github.com/flowtype/vim-flow)
 - [sideways.vim](https://github.com/AndrewRadev/sideways.vim)
 - Macros
 - [ ] [marvim](http://www.vim.org/scripts/script.php?script_id=2154)
@@ -85,13 +90,13 @@ add into my vim workflow.
   - [ ] [tmuxline.vim](https://github.com/edkolev/tmuxline.vim)
 - Miscellaneous
   - [ ] [vim-lion](https://github.com/tommcdo/vim-lion)
-  - [x] [Multiple cursors](https://github.com/terryma/vim-multiple-cursors)
   - [ ] [Editorconfig.vim](https://github.com/editorconfig/editorconfig-vim)
   - [ ] [devicons](https://github.com/ryanoasis/vim-devicons)
   - [ ] [vim-pencil](https://github.com/reedes/vim-pencil)
   - [ ] [gruvbox](https://github.com/morhetz/gruvbox)
 
 ### Tmux
+- Fix for NeoVim to allow <C-h> for vim and tmux pane navigation https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
 - [ ] Autostart multiple tmux sessions
 - [ ] Tmux auto window resizing
 - [ ] Tmux plugins
