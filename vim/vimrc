@@ -5,6 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 source $HOME/Code/dotfiles/vim/generic.vim
+source $HOME/Code/dotfiles/vim/project.vim
 
 function! LanguageConfig(filename)
   let l:filename = "lang_config/" . a:filename . ".vim"
