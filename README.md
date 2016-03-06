@@ -95,6 +95,13 @@ add into my vim workflow.
   - [ ] [vim-pencil](https://github.com/reedes/vim-pencil)
   - [ ] [gruvbox](https://github.com/morhetz/gruvbox)
 
+### Plugin Ideas
+- php
+  - See which namespace imports are actually used and prune unnecessary ones
+  - Abstract class / interface implementing (in progress) implement.vim
+  - Opening up test file for given php file
+    - Look at rails.vim for inspiration, I think it does similar things
+
 ### Tmux
 - Fix for NeoVim to allow <C-h> for vim and tmux pane navigation https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
 - [ ] Autostart multiple tmux sessions
