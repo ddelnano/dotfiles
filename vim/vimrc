@@ -29,13 +29,13 @@ augroup vimrcEx
 "Plugin Configuration
 call PluginConfig("vim-plug")
 call PluginConfig("ycm")
-call PluginConfig("ctrlp")
 call PluginConfig("ultisnips")
 call PluginConfig("vim-commentary")
 call PluginConfig("nerdtree")
 call PluginConfig("vim-php-namespace")
 call PluginConfig("vim-easytags")
 call PluginConfig("neomake")
+call PluginConfig("fzf")
 " call PluginConfig("vim-flow")
 
 " Add in A.vim for switching between .h and .c files

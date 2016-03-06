@@ -10,7 +10,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Plug 'scrooloose/syntastic'
-Plug 'ctrlpvim/ctrlp.vim'      " Fuzzy file search
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'altercation/vim-colors-solarized'  " Solarized color theme
 Plug 'SirVer/ultisnips'                  " Vim snippet engine
@@ -33,5 +32,7 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'ddelnano/implement.vim', { 'for': 'php' }
 " Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 Plug 'benekastah/neomake'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
