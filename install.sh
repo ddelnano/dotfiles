@@ -21,6 +21,14 @@ else
     echo "Ignoring vim configuration"
 fi
 
+if ask_response 'Do you want to install bash configuration (y/n)'; then
+    ln -sf $HOME/Code/dotfiles/bash/bash_profile $HOME/.bash_profile
+    ln -sf $HOME/Code/dotfiles/bash/zshrc $HOME/.zshrc
+    echo "Installing vim configuration"
+else
+    echo "Ignoring vim configuration"
+fi
+
 if ask_response 'Do you want to install tmux configuration (y/n)'; then
     ln -sf $HOME/Code/dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 else
