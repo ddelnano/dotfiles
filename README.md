@@ -1,7 +1,19 @@
 # dotfiles
 My dotfile configuration
 
+## Annoying things that need fixed asap
+- Neomake does not show eslint errors but works with php
+- fzf shows files in node_modules
+- use fzf to jump to tags in current file, or find another way
+- create mapping to surround a statement in var_dump or console.log
+  depending on filetype / language context
+- Tmux copying between sessions
+- Tmux splitting in same dir
+- Text wrapping in vim per filetype
+- Learn more about tmux
+
 ## Todo
+- Have zsh / bash notify me if git remote origin does not reflect folder name
 - Add bash and zsh stuff to repo
 - Figure out better solution for eslint and jscs, it is very slow
   - Always use eslint and allow the option of running jscs
@@ -97,15 +109,16 @@ add into my vim workflow.
 
 ### Plugin Ideas
 - php
+  - Have vim understand require paths for opening files - rails.vim accomplishes similar things for the other bullets
+    - Opening up test file for given php file
   - See which namespace imports are actually used and prune unnecessary ones
   - Abstract class / interface implementing (in progress) implement.vim
-  - Opening up test file for given php file
-    - Look at rails.vim for inspiration, I think it does similar things
+
 
 ### Tmux
 - Fix for NeoVim to allow <C-h> for vim and tmux pane navigation https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
 - [ ] Autostart multiple tmux sessions
-- [ ] Tmux auto window resizing
+- [x] Tmux auto window resizing <prefix>z
 - [ ] Tmux plugins
 - [ ] Tmux copying to system clipboard
     - Retro groove color scheme for Vim
