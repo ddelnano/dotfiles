@@ -23,6 +23,7 @@ alias ga="git add"
 alias gaa="git add ."
 alias gs='git status'
 alias gp='git push'
+alias gpo='git push origin'
 alias gpom='git push origin master'
 
 #codeception
@@ -67,6 +68,9 @@ export CHEATCOLORS=true
 
 #tmux
 alias tmux="TERM=screen-256color-bce tmux -2"
+
+#grep
+alias grep="grep --exclude-dir={node_modules,vendor,.git}"
 
 # nvm / npm stuff
 export NPM_TOKEN="29b91150-5ec8-440a-9e9a-389c5939b20f"
