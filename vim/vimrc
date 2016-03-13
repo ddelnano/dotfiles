@@ -37,7 +37,8 @@ call PluginConfig("vim-php-namespace")
 call PluginConfig("vim-easytags")
 call PluginConfig("neomake")
 call PluginConfig("fzf")
-" call PluginConfig("vim-flow")
+call PluginConfig("surround")
+call PluginConfig("vim-flow")
 
 " Add in A.vim for switching between .h and .c files
 

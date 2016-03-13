@@ -30,7 +30,7 @@ Plug 'vim-php/tagbar-phpctags.vim', { 'for': 'php' }
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kylef/apiblueprint.vim'
 Plug 'ddelnano/implement.vim', { 'for': 'php' }
-" Plug 'flowtype/vim-flow', { 'for': 'javascript' }
+Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 Plug 'benekastah/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
