@@ -39,6 +39,7 @@ call PluginConfig("neomake")
 call PluginConfig("fzf")
 call PluginConfig("surround")
 call PluginConfig("vim-flow")
+call PluginConfig("pdv")
 
 " Add in A.vim for switching between .h and .c files
 

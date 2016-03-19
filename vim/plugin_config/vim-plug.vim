@@ -34,5 +34,7 @@ Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 Plug 'benekastah/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'tobyS/vmustache'
+Plug 'tobyS/pdv'
 
 call plug#end()
