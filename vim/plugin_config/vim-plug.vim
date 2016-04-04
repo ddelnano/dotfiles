@@ -36,5 +36,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
+Plug 'keith/tmux.vim'
 
 call plug#end()
