@@ -1,5 +1,8 @@
-#newer version of vim
-alias vim='nvim'
+if [ -x "$(command -v nvim)" ]; then
+    # If neovim exists alias it to vim
+    echo 'Using neovim'
+    alias vim='nvim'
+fi
 
 alias vimrc='vim ~/.vimrc'
 
@@ -7,7 +10,7 @@ alias vimrc='vim ~/.vimrc'
 alias vaprobash='curl -L http://bit.ly/vaprobash > Vagrantfile'
 
 #reload bash configuration
-alias reload='source ~/.bashrc'
+alias reload='source ~/.bash_profile'
 
 #phpunit
 alias t='vendor/bin/phpunit tests/'
