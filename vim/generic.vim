@@ -56,3 +56,9 @@ set splitright
 
 " Allow use of the mouse
 set mouse=a
+
+" TODO: Make this able to toggle it off
+" Mark a position, move to the previous it block, move to the end of the word
+" and append 'only' and return to mark
+command! MochaOnly execute "normal! ma?it(\<cr>ea.only\<esc>`a"
+nnoremap <leader>mo :MochaOnly<cr>
