@@ -18,10 +18,6 @@ cmap w!! :w !sudo tee %
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" Fast way to save / close all windows
-nnoremap <leader>qq :qall<cr>
-nnoremap <leader>qw :wqall<cr>
-
 " Toggle paste mode
 set pastetoggle=<F10>
 
