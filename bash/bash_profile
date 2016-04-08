@@ -2,7 +2,7 @@
 #export PATH=/usr/local/php5/bin:$PATH":vendor/bin:~/.composer/vendor/bin"
 export PATH=/usr/local/bin:$PATH":vendor/bin:~/.composer/vendor/bin"
 
-source ~/.bashrc #get alias
+source /home/$USER/Code/dotfiles/bash/bashrc #get alias
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
