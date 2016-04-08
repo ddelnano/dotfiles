@@ -2,18 +2,34 @@
 My dotfile configuration
 
 ## Annoying things that need fixed asap
+- php
+  - Creating properties
+  - pdv mapping works sometimes, other times causes weird shit
+  - Adding stuff to constructor and assigning properties
+  - Creating doc blocks
+  - tag updating plugin very slow
+  - snippet for symfony console app?
+  - creating test files for a new file
+- Running dm start default, dm env, and eval
+  - Maybe can be smart when I figure out how to open scripted sessions
 - Neomake does not show eslint errors but works with php
 - fzf shows files in node_modules
 - use fzf to jump to tags in current file, or find another way
+- tmux
+  - Navigate previous and next session with <C-n> and <C-p> in sessions screen <prefix>s
 - create mapping to surround a statement in var_dump or console.log
   depending on filetype / language context
 - Tmux copying between sessions
 - Tmux splitting in same dir
 - Text wrapping in vim per filetype
 - Learn more about tmux
+- Add constructor building functionality in vim for php
+- Add creating new class that figures out namespace automatically
+- vim open tag in new window but make it a vertical split (currently horizontal)
 
 ## Todo
 - Have zsh / bash notify me if git remote origin does not reflect folder name
+- Learn how to use vim omnifunc
 - Add bash and zsh stuff to repo
 - Figure out better solution for eslint and jscs, it is very slow
   - Always use eslint and allow the option of running jscs
@@ -114,6 +130,8 @@ add into my vim workflow.
   - See which namespace imports are actually used and prune unnecessary ones
   - Abstract class / interface implementing (in progress) implement.vim
 
+## Vimscript Ideas
+Use cool magic with % (filename) to create and switch to test files
 
 ### Tmux
 - Fix for NeoVim to allow <C-h> for vim and tmux pane navigation https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
