@@ -9,7 +9,7 @@ snippet class "PHP Class Definition" b
 
 namespace ${1};
 
-class ${2} {
+class `!v expand('%:t:r')` {
 
 ${0}
 }
