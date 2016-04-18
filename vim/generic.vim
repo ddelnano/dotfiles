@@ -18,6 +18,9 @@ cmap w!! :w !sudo tee %
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" yank to EOL like it should
+nnoremap Y y$
+
 " Toggle paste mode
 set pastetoggle=<F10>
 
