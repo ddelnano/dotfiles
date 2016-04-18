@@ -124,6 +124,10 @@ add into my vim workflow.
   - [ ] [gruvbox](https://github.com/morhetz/gruvbox)
 
 ### Plugin Ideas
+- same deal as vim alternate, except make it much better
+  - Allow setting filetype alternate file.
+  - Allow overridding values per project for weird things
+    - Would this work with nws?
 - php
   - Have vim understand require paths for opening files - rails.vim accomplishes similar things for the other bullets
     - Opening up test file for given php file
