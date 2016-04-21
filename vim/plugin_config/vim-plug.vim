@@ -37,5 +37,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
 Plug 'keith/tmux.vim'
+Plug 'fatih/vim-go', { 'for': 'go' }
 
 call plug#end()
