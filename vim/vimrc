@@ -47,5 +47,6 @@ augroup END
 " Language Configuration
 call LanguageConfig("markdown")
 call LanguageConfig("yml")
+call LanguageConfig("go")
 
 colorscheme solarized
