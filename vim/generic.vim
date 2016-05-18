@@ -5,10 +5,17 @@ set ff=unix
 set relativenumber
 set number
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set linebreak
+set nolist
 
 inoremap jk <Esc>
 let mapleader = ","
 nnoremap <leader>w <C-w>
+
+" Allow using j and k to move through long lines
+" http://stackoverflow.com/questions/20975928/moving-the-cursor-through-long-soft-wrapped-lines-in-vim/21000307#21000307
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Allow writing files that need sudo privileges
 " after opening them
