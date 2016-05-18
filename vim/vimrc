@@ -48,5 +48,6 @@ augroup END
 call LanguageConfig("markdown")
 call LanguageConfig("yml")
 call LanguageConfig("go")
+call LanguageConfig("cucumber")
 
 colorscheme solarized
