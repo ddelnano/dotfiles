@@ -26,6 +26,7 @@ My dotfile configuration
 - Add constructor building functionality in vim for php
 - Add creating new class that figures out namespace automatically
 - vim open tag in new window but make it a vertical split (currently horizontal)
+- javascript toggle mocha tests async
 
 ## Todo
 - Have zsh / bash notify me if git remote origin does not reflect folder name
