@@ -25,6 +25,9 @@ cmap w!! :w !sudo tee %
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" Add braces and put cursor inbetween them
+inoremap <leader>b { }<Esc>hr<cr>O
+
 " yank to EOL like it should
 nnoremap Y y$
 
