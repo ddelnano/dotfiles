@@ -38,5 +38,6 @@ Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
 Plug 'keith/tmux.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 call plug#end()
