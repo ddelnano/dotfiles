@@ -49,5 +49,6 @@ call LanguageConfig("markdown")
 call LanguageConfig("yml")
 call LanguageConfig("go")
 call LanguageConfig("cucumber")
+call LanguageConfig("javascript")
 
 colorscheme solarized
