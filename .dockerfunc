@@ -1,0 +1,57 @@
+#!/bin/zsh
+
+# vim: set ft=bash
+setup_docker_client() {
+    # TODO: Figure out how not to use $? directly.
+    docker ps > /dev/null 2>&1
+    if [ $? -ne 0 ]; then
+        echo "Setting up default docker-machine envs"
+        docker-machine env > /dev/null 2>&1
+        eval $(docker-machine env) > /dev/null 2>&1
+    fi
+}
+
+ansible_playbook() {
+    setup_docker_client
+
+    docker run \
+        --entrypoint ansible-playbook \
+        -e TERM \
+        -it \
+        -v $(pwd):/src \
+        ddelnano/ansible \
+        $@
+}
+
+ran_cli_stretch() {
+    setup_docker_client
+
+    docker run \
+        -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
+        -e "CATTLE_ACCESS_KEY=$STRETCH_CATTLE_ACCESS_KEY" \
+        -e "CATTLE_SECRET_KEY=$STRETCH_CATTLE_SECRET_KEY" \
+        nowait/rancher-cli:0.1.0 \
+        $@
+}
+
+ran_cli_prod() {
+    setup_docker_client
+
+    docker run \
+        -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
+        -e "CATTLE_ACCESS_KEY=$PROD_CATTLE_ACCESS_KEY" \
+        -e "CATTLE_SECRET_KEY=$PROD_CATTLE_SECRET_KEY" \
+        nowait/rancher-cli:0.1.0 \
+        $@
+}
+
+ran_cli_dev() {
+    setup_docker_client
+
+    docker run \
+        -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
+        -e "CATTLE_ACCESS_KEY=$DEV_CATTLE_ACCESS_KEY" \
+        -e "CATTLE_SECRET_KEY=$DEV_CATTLE_SECRET_KEY" \
+        nowait/rancher-cli:0.1.0 \
+        $@
+}

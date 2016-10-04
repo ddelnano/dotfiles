@@ -12,6 +12,8 @@ fi
 
 # Customize to your needs...
 source $HOME/.bashrc
+source $HOME/.secrets
+source $HOME/.dockerfunc
 
 export NVM_DIR="/Users/ddelnano/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
