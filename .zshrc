@@ -11,12 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-source $HOME/Code/dotfiles/bash/bashrc
+source $HOME/.bashrc
 
 export NVM_DIR="/Users/ddelnano/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # added by travis gem
 [ -f /Users/ddelnano/.travis/travis.sh ] && source /Users/ddelnano/.travis/travis.sh
