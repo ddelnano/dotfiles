@@ -39,5 +39,6 @@ Plug 'tobyS/pdv'
 Plug 'keith/tmux.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'chase/vim-ansible-yaml'
 
 call plug#end()
