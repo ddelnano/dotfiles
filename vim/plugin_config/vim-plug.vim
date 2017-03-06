@@ -40,5 +40,8 @@ Plug 'keith/tmux.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'chase/vim-ansible-yaml'
+Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }
+Plug 'hashivim/vim-terraform'
+Plug 'posva/vim-vue'
 
 call plug#end()

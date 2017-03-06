@@ -13,3 +13,6 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_javascript_eslint_exe=substitute(g:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 
 let g:neomake_go_enabled_makers = ['go']
+let g:neomake_python_enabled_makers = ['python']
+
+" let g:neomake_lua_enabled_makers = ['luac']

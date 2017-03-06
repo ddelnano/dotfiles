@@ -11,6 +11,17 @@ setup_docker_client() {
     fi
 }
 
+aws_cli() {
+    docker run \
+        --rm \
+        -it \
+        --entrypoint /home/aws/aws/env/bin/aws \
+        -v $HOME/.aws:/home/aws/.aws \
+        -v $HOME/Downloads:/home/aws/Downloads \
+        fstab/aws-cli \
+        $@
+}
+
 ansible_playbook() {
     setup_docker_client
 
@@ -27,10 +38,14 @@ ran_cli_stretch() {
     setup_docker_client
 
     docker run \
+        --rm \
         -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
         -e "CATTLE_ACCESS_KEY=$STRETCH_CATTLE_ACCESS_KEY" \
         -e "CATTLE_SECRET_KEY=$STRETCH_CATTLE_SECRET_KEY" \
-        nowait/rancher-cli:0.1.0 \
+        -e "DOCKER_REGISTRY_USERNAME=$DOCKER_REGISTRY_USERNAME" \
+        -e "DOCKER_REGISTRY_PASSWORD=$DOCKER_REGISTRY_PASSWORD" \
+        -e "DOCKER_REGISTRY_URL=$DOCKER_REGISTRY_URL" \
+        nowait/rancher-cli:0.3.0 \
         $@
 }
 
@@ -38,10 +53,14 @@ ran_cli_prod() {
     setup_docker_client
 
     docker run \
+        --rm \
         -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
         -e "CATTLE_ACCESS_KEY=$PROD_CATTLE_ACCESS_KEY" \
         -e "CATTLE_SECRET_KEY=$PROD_CATTLE_SECRET_KEY" \
-        nowait/rancher-cli:0.1.0 \
+        -e "DOCKER_REGISTRY_USERNAME=$DOCKER_REGISTRY_USERNAME" \
+        -e "DOCKER_REGISTRY_PASSWORD=$DOCKER_REGISTRY_PASSWORD" \
+        -e "DOCKER_REGISTRY_URL=$DOCKER_REGISTRY_URL" \
+        nowait/rancher-cli:0.3.0-rc4 \
         $@
 }
 
@@ -49,9 +68,48 @@ ran_cli_dev() {
     setup_docker_client
 
     docker run \
+        --rm \
         -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
         -e "CATTLE_ACCESS_KEY=$DEV_CATTLE_ACCESS_KEY" \
         -e "CATTLE_SECRET_KEY=$DEV_CATTLE_SECRET_KEY" \
-        nowait/rancher-cli:0.1.0 \
+        -e "DOCKER_REGISTRY_USERNAME=$DOCKER_REGISTRY_USERNAME" \
+        -e "DOCKER_REGISTRY_PASSWORD=$DOCKER_REGISTRY_PASSWORD" \
+        -e "DOCKER_REGISTRY_URL=$DOCKER_REGISTRY_URL" \
+        nowait/rancher-cli:0.3.0 \
         $@
+}
+
+ran_cli_all() {
+    setup_docker_client
+
+    docker run \
+        --rm \
+        -e "CATTLE_URL=https://rancher.toolswait.com/v1" \
+        -e "CATTLE_ACCESS_KEY=$ALL_CATTLE_ACCESS_KEY" \
+        -e "CATTLE_SECRET_KEY=$ALL_CATTLE_SECRET_KEY" \
+        -e "DOCKER_REGISTRY_USERNAME=$DOCKER_REGISTRY_USERNAME" \
+        -e "DOCKER_REGISTRY_PASSWORD=$DOCKER_REGISTRY_PASSWORD" \
+        -e "DOCKER_REGISTRY_URL=$DOCKER_REGISTRY_URL" \
+        nowait/rancher-cli:0.3.0 \
+        $@
+}
+
+npm_install() {
+    docker run  \
+    --rm \
+    -v $(pwd):/src \
+    nowait/node:5.11.1-npm-alpine \
+    install
+}
+
+pt() {
+    docker run --rm --net host -it -v $(pwd):/src -w /src fr3nd/percona-toolkit $@
+}
+
+php7() {
+    docker run --rm -it -v $(pwd):/src -w /src nowait/php:7.0.13-cli-alpine $@
+}
+
+composer7() {
+    docker run --rm -it -v $(pwd):/src -w /src nowait/php:7.0.13-composer-alpine $@
 }

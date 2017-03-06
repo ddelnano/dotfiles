@@ -28,6 +28,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Add braces and put cursor inbetween them
 inoremap <leader>b { }<Esc>hr<cr>O
 
+" Copy current file to clipboard
+nnoremap <leader>cf :let @*=expand("%")<cr>
+
 " yank to EOL like it should
 nnoremap Y y$
 
