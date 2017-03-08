@@ -52,3 +52,7 @@ call LanguageConfig("cucumber")
 call LanguageConfig("javascript")
 
 colorscheme solarized
+
+if has("nvim")
+    nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
+endif

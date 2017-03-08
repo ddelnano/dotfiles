@@ -1,6 +1,18 @@
 # dotfiles
 My dotfile configuration
 
+## Dependencies
+- tpm
+- zsh
+- neovim with python support
+- ctags
+
+## Install Plugins
+- Tpm
+  - prefix + I
+- Vim Plug
+  - :PlugInstall
+
 ## Annoying things that need fixed asap
 - php
   - Creating properties

@@ -43,5 +43,6 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'Dockerfile' }
 Plug 'hashivim/vim-terraform'
 Plug 'posva/vim-vue'
+Plug 'rodjek/vim-puppet'
 
 call plug#end()
