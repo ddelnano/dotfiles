@@ -108,7 +108,7 @@ alias homestead='~/.composer/vendor/laravel/homestead/homestead'
 alias grun='./gradlew run'
 alias gtest='./gralew test'
 
-export PATH=/usr/local/bin:$PATH":vendor/bin:~/.composer/vendor/bin:/usr/local/go/bin"
+export PATH=/usr/local/bin:/usr/local:$PATH":vendor/bin:~/.composer/vendor/bin:/usr/local/go/bin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # nowait 
