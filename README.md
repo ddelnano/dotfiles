@@ -7,6 +7,7 @@ My dotfile configuration
 - zsh
 - neovim with python support
 - ctags
+- node and npm
 
 ## Install Plugins
 - Tpm
