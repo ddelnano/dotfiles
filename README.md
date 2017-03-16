@@ -8,6 +8,7 @@ My dotfile configuration
 - neovim with python support
 - ctags
 - node and npm
+- golang
 
 ## Install Plugins
 - Tpm
