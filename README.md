@@ -9,6 +9,7 @@ My dotfile configuration
 - ctags
 - node and npm
 - golang
+- RVM
 
 ## Install Plugins
 - Tpm
