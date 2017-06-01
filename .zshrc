@@ -134,10 +134,16 @@ export CHEATCOLORS=true
 #tmux
 alias tmux="TERM=screen-256color-bce tmux -2"
 
+alias ssh-dev="ssh -A dev1-uswest1cdevc"
+
 # nvm / npm stuff
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
+. "/usr/local/opt/nvm/nvm.sh"
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+if [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
+    ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock;
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;

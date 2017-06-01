@@ -11,6 +11,9 @@ My dotfile configuration
 - golang
 - RVM
 
+## Other tools I normall install
+- postgres via homebrew
+
 ## Install Plugins
 - Tpm
   - prefix + I

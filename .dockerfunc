@@ -18,6 +18,7 @@ aws_cli() {
         --entrypoint /home/aws/aws/env/bin/aws \
         -v $HOME/.aws:/home/aws/.aws \
         -v $HOME/Downloads:/home/aws/Downloads \
+        -v $(pwd):/home/aws/Desktop \
         fstab/aws-cli \
         $@
 }
@@ -60,7 +61,7 @@ ran_cli_prod() {
         -e "DOCKER_REGISTRY_USERNAME=$DOCKER_REGISTRY_USERNAME" \
         -e "DOCKER_REGISTRY_PASSWORD=$DOCKER_REGISTRY_PASSWORD" \
         -e "DOCKER_REGISTRY_URL=$DOCKER_REGISTRY_URL" \
-        nowait/rancher-cli:0.3.0-rc4 \
+        nowait/rancher-cli:0.3.0 \
         $@
 }
 
@@ -103,7 +104,7 @@ npm_install() {
 }
 
 pt() {
-    docker run --rm --net host -it -v $(pwd):/src -w /src fr3nd/percona-toolkit $@
+    docker run --rm --net host -it -v $(pwd):/src -w /src nowait/pt-http-health-check:2.2.15-2 $@
 }
 
 php7() {
