@@ -89,7 +89,10 @@ if [ -d $HOME/Code/go ]; then
 fi
 
 #newer version of vim
-alias vim='nvim'
+command -v nvim > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    alias vim='nvim'
+fi
 
 #reload bash configuration
 alias reload='source ~/.bashrc'
@@ -113,8 +116,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # nowait 
 alias nw-exec="docker exec -it nowait-server"
-
-alias cs-exec="docker exec -it checkstatus"
 
 # docker
 alias dc="docker-compose"
