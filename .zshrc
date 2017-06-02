@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export DOTFILES=~/dotfiles
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/ddelnano/.oh-my-zsh
@@ -100,6 +101,7 @@ alias reload='source ~/.bashrc'
 #git
 alias ga="git add"
 alias gaa="git add ."
+alias gc="git commit"
 alias gs='git status'
 alias gp='git push'
 alias gpom='git pull origin master'
@@ -148,3 +150,5 @@ if [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
     ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock;
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -1,7 +1,9 @@
-set t_Co=256
+if &t_Co == 256
+  let g:solarized_termcolors=256
+  let g:solarized_visibility =  "low"
+  source $DOTFILES/vim/colors/solarized.vim
+  colorscheme solarized
+endif
 syntax on
 
-let g:solarized_termcolors=256
-let g:solarized_visibility =  "low"
-colorscheme solarized
 set background=dark

@@ -1,11 +1,7 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
-endif
-
-source $HOME/Code/dotfiles/vim/generic.vim
-source $HOME/Code/dotfiles/vim/project.vim
+source $DOTFILES/vim/generic.vim
+source $DOTFILES/vim/project.vim
+"Solarized theme
+source $DOTFILES/vim/colors/config.vim
 
 function! LanguageConfig(filename)
   let l:filename = "lang_config/" . a:filename . ".vim"
@@ -17,12 +13,9 @@ function! PluginConfig(filename)
   exec "runtime " . l:filename
 endfunction
 
-let &runtimepath .= ",$HOME/Code/dotfiles/vim"
 
 source $HOME/.vim/autoload/plug.vim
 
-"Solarized theme
-source $HOME/Code/dotfiles/vim/colors/config.vim
 
 augroup vimrcEx
   autocmd!
@@ -50,8 +43,6 @@ call LanguageConfig("yml")
 call LanguageConfig("go")
 call LanguageConfig("cucumber")
 call LanguageConfig("javascript")
-
-colorscheme solarized
 
 if has("nvim")
     nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
