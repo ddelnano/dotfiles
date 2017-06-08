@@ -1,12 +1,11 @@
 " If Vim Plug not present install
 " Auto-Install vim-plug
-source $HOME/.vim/autoload/plug.vim
-
 " TODO: PluginInstall does not happen right after downloading vim plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   
+  source $HOME/.vim/autoload/plug.vim
   autocmd VimEnter * PlugInstall
 endif
 
@@ -22,3 +21,4 @@ endif
 " of the vimrc to work properly.  background was left to
 " light when this was in vim/colors/config.vim
 set background=dark
+colorscheme solarized
