@@ -10,11 +10,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 
-" source $DOTFILES/vim/generic.vim
-" source $DOTFILES/vim/project.vim
-" "Solarized theme
-" source $DOTFILES/vim/colors/config.vim
-
 for file in split(glob($DOTFILES."/vim/**/*.vim"), '\n')
   exe 'source' file
 endfor
