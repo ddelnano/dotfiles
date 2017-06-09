@@ -1,3 +1,5 @@
+source $DOTFILES/vim/plug.vim
+
 for file in split(glob($DOTFILES."/vim/**/*.vim"), '\n')
   exe 'source' file
 endfor
