@@ -71,4 +71,6 @@ if [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
 
+# Source fzf file based on current shell.
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
