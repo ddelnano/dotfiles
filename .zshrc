@@ -72,5 +72,10 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
 
 # Source fzf file based on current shell.
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [[ "$SHELL" == 'bash' ]] && [ -f ~/.fzf.bash ]; then
+    source ~/.fzf.bash
+fi
+
+if [[ "$SHELL" =~ 'zsh' ]] && [ -f ~/.fzf.zsh ]; then
+    source ~/.fzf.zsh
+fi
