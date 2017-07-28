@@ -21,7 +21,9 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kylef/apiblueprint.vim'
 Plug 'ddelnano/implement.vim', { 'for': 'php' }
 Plug 'flowtype/vim-flow', { 'for': 'javascript' }
-Plug 'benekastah/neomake'
+if has("nvim")
+    Plug 'benekastah/neomake'
+endif
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tobyS/vmustache'
