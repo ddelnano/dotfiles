@@ -39,7 +39,7 @@ alias gs='git status'
 alias gp='git push'
 alias gpom='git pull origin master'
 
-export PATH=/usr/local/bin:/usr/local:$PATH":vendor/bin:~/.composer/vendor/bin:/usr/local/go/bin"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local:$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # docker
