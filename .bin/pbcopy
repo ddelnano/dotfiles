@@ -1,8 +1,8 @@
 #!/bin/bash 
 
-pbcopy_path="$(dirname "${BASH_SOURCE[0]}")/pbcopy"
-pbcopy_bin=$(command -v pbcopy)
-
-if [ $? -ne 0 ] || [ $pbcopy_bin == $pbcopy_path ]; then
-    cat | nc -q1 localhost 2224
+if [ $(uname) == 'Darwin' ]; then
+    echo 'Please install pbcopy'
+    exit 0
 fi
+
+cat | nc -q1 localhost 2224
