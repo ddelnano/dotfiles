@@ -7,6 +7,7 @@ dotfiles: ~/.config/nvim
 		ln -sfn $$file $(HOME)/$$f; \
 	done
 	ln -sf $(CURDIR)/.zshrc ~/.bashrc
+	ln -sf $(CURDIR)/.bin ~/.bin
 	ln -sf $(CURDIR)/.vimrc ~/.config/nvim/init.vim
 
 ~/.config/nvim:
