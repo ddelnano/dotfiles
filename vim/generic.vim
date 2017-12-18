@@ -25,9 +25,6 @@ cmap w!! :w !sudo tee %
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" Add braces and put cursor inbetween them
-inoremap <leader>b { }<Esc>hr<cr>O
-
 " Copy current file to clipboard
 nnoremap <leader>cf :let @*=expand("%")<cr>
 

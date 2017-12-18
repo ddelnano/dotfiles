@@ -1,16 +1,6 @@
-" If Vim Plug not present install
-" Auto-Install vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  echo "this is running"
-  autocmd VimEnter * PlugInstall
-endif
-
 call plug#begin('~/.vim/plugged')
 
 " Plug 'scrooloose/syntastic'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'altercation/vim-colors-solarized'  " Solarized color theme
 Plug 'SirVer/ultisnips'                  " Vim snippet engine
 Plug 'tpope/vim-surround'                  " Delete surrounding characters
@@ -31,7 +21,9 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kylef/apiblueprint.vim'
 Plug 'ddelnano/implement.vim', { 'for': 'php' }
 Plug 'flowtype/vim-flow', { 'for': 'javascript' }
-Plug 'benekastah/neomake'
+if has("nvim")
+    Plug 'benekastah/neomake'
+endif
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tobyS/vmustache'

@@ -1,0 +1,8 @@
+#!/bin/bash 
+
+if [ $(uname) == 'Darwin' ]; then
+    echo 'Please install pbcopy'
+    exit 0
+fi
+
+cat | nc -q1 localhost 2224
