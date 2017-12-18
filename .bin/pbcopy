@@ -5,4 +5,10 @@ if [ $(uname) == 'Darwin' ]; then
     exit 0
 fi
 
+xclipPath=$(which xclip)
+if [ -x "$xclipPath" ]; then
+    cat | xclip -selection c
+    exit 0
+fi
+
 cat | nc -q1 localhost 2224
