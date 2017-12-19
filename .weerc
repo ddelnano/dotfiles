@@ -1,3 +1,7 @@
+# Never use dcc
+/plugin unload xfer
+/set weechat.plugin.autoload *,!xfer
+
 /script install highmon.pl
 /script install go.py
 
