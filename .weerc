@@ -1,0 +1,12 @@
+# Never use dcc
+/plugin unload xfer
+/set weechat.plugin.autoload *,!xfer
+
+/script install highmon.pl
+/script install notify_send.pl
+/script install go.py
+
+
+/key bind ctrl-P /go
+/key bind ctrl-U /window page_up
+/key bind ctrl-D /window page_down

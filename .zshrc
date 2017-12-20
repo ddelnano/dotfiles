@@ -54,7 +54,7 @@ export CHEATCOLORS=true
 #tmux
 alias tmux="TERM=screen-256color-bce tmux -2"
 
-alias devbox="ssh -A dev1-uswest1cdevc"
+alias weechat="weechat -r '/exec inwee $HOME/.weerc'"
 
 # nvm / npm stuff
 command -v nvm > /dev/null 2>&1
