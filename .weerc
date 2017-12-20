@@ -3,6 +3,7 @@
 /set weechat.plugin.autoload *,!xfer
 
 /script install highmon.pl
+/script install notify_send.pl
 /script install go.py
 
 
