@@ -1,8 +1,13 @@
 #!/bin/bash 
 
 if [ $(uname) == 'Darwin' ]; then
-    echo 'Please install pbcopy'
-    exit 0
+    if [ -x $(which pbcopy) ]; then
+        cat | pbcopy
+        exit 0
+    else
+        echo 'Please install pbcopy'
+        exit 1
+    fi
 fi
 
 xclipPath=$(which xclip)
