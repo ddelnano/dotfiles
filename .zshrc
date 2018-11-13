@@ -39,7 +39,7 @@ alias gs='git status'
 alias gp='git push'
 alias gpom='git pull origin master'
 
-export PATH="/usr/local/bin:$HOME/.bin:$HOME/.fzf/bin:/usr/local:$PATH:/usr/local/go/bin"
+export PATH="$HOME/.bin:/usr/local/bin:$HOME/.fzf/bin:/usr/local:$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # docker
@@ -52,7 +52,7 @@ alias dv="docker volume"
 export CHEATCOLORS=true
 
 #tmux
-alias tmux="TERM=screen-256color-bce tmux -2"
+alias tmux='tmux -S ~/ddelnano'
 
 alias weechat="weechat -r '/exec inwee $HOME/.weerc'"
 
@@ -66,10 +66,14 @@ fi
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+if [ -n "$TMUX" ]; then
+    export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
+fi
+
 if [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
+    echo "Symlinking $SSH_AUTH_SOCK to ~/.ssh/ssh_auth_sock";
     ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock;
 fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
 
 # Source fzf file based on current shell.
 if [[ "$SHELL" == 'bash' ]] && [ -f ~/.fzf.bash ]; then

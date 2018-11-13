@@ -3,3 +3,6 @@ vim/.netrwhist
 vim/autoload/
 vim/plugged/
 .tmux/plugins
+# This ignores the tmux binary 
+# I install in ~/.bin
+.bin/tmux
