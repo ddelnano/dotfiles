@@ -71,7 +71,6 @@ if [ -n "$TMUX" ]; then
 fi
 
 if [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
-    echo "Symlinking $SSH_AUTH_SOCK to ~/.ssh/ssh_auth_sock";
     ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock;
 fi
 
