@@ -6,3 +6,4 @@ vim/plugged/
 # This ignores the tmux binary 
 # I install in ~/.bin
 .bin/tmux
+.bin/bazel
