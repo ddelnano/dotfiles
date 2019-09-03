@@ -1,0 +1,8 @@
+$include /etc/inputrc
+
+set completion-prefix-display-length 2
+set completion-ignore-case on
+
+set revert-all-at-newline on
+# Color files by types
+set colored-stats On
