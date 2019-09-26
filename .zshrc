@@ -66,11 +66,9 @@ fi
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-if [ -n "$TMUX" ]; then
+if [[ -n "$TMUX" || -S ~/.ssh/ssh_auth_sock ]]; then
     export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock;
-fi
-
-if [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
+elif [[ -S "$SSH_AUTH_SOCK" && ! -h "$SSH_AUTH_SOCK" ]]; then
     ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock;
 fi
 
