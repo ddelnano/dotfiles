@@ -6,7 +6,6 @@ Plug 'SirVer/ultisnips'                  " Vim snippet engine
 Plug 'tpope/vim-surround'                  " Delete surrounding characters
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
-Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript',  { 'for': 'javascript' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'wellle/targets.vim'
