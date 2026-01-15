@@ -6,16 +6,6 @@ else
     export DOTFILES=~/
 fi
 
-# Path to your oh-my-zsh installation.
-if [[ "$SHELL" =~ 'zsh' ]]; then
-    export ZSH=$HOME/.oh-my-zsh
-
-    ZSH_THEME="cloud"
-    plugins=(git)
-
-    source $ZSH/oh-my-zsh.sh
-fi
-
 if [ -d $HOME/Code/go ]; then
     export GOPATH=$HOME/Code/go
     PATH=$PATH:$GOPATH/bin
@@ -82,4 +72,4 @@ if [[ "$SHELL" =~ 'zsh' ]] && [ -f ~/.fzf.zsh ]; then
 fi
 
 source ~/.git-prompt.sh
-export PS1="\[\e[1;34m\]\u\[\e[0;39m\]@\[\e[1;32m\]\h\[\e[0;39m\]:\[\e[1;33m\]\w\[\e[0;39m\]\$(__git_ps1 ' \[\e[1;36m\](%s)\[\e[0;39m\] ')\$ "
+# export PS1="\[\e[1;34m\]\u\[\e[0;39m\]@\[\e[1;32m\]\h\[\e[0;39m\]:\[\e[1;33m\]\w\[\e[0;39m\]\$(__git_ps1 ' \[\e[1;36m\](%s)\[\e[0;39m\] ')\$ "
