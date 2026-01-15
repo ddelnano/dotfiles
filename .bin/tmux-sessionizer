@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+
+# Combines existing tmux sessions with available project directories
+# - Existing sessions are shown and can be switched to
+# - Non-existent sessions are created on selection
+
+get_sessions() {
+    # Existing tmux sessions (marked with *)
+    tmux list-sessions -F "#{session_name}" 2>/dev/null | while read -r session; do
+        echo "* $session"
+    done
+}
+
+get_projects() {
+    # dotfiles special case
+    if [[ -d "$HOME/dotfiles" ]]; then
+        echo "dotfiles"
+    fi
+
+    # All subdirectories of ~/code
+    if [[ -d "$HOME/code" ]]; then
+        for dir in "$HOME/code"/*/; do
+            [[ -d "$dir" ]] && basename "$dir"
+        done
+    fi
+}
+
+get_all_options() {
+    # Combine and deduplicate, keeping * prefix for existing sessions
+    {
+        get_sessions
+        get_projects
+    } | awk '
+        /^\* / { name = substr($0, 3); existing[name] = 1; print; next }
+        !existing[$0] { print }
+    '
+}
+
+# Get selection from fzf
+selected=$(get_all_options | ~/.fzf/bin/fzf --prompt="session> " --print-query | tail -1)
+
+[[ -z "$selected" ]] && exit 0
+
+# Strip the * prefix if present (existing session)
+is_existing=false
+if [[ "$selected" == \*\ * ]]; then
+    selected="${selected#\* }"
+    is_existing=true
+fi
+
+# Normalize session name (replace dots with underscores for tmux compatibility)
+session_name=$(echo "$selected" | tr '.' '_')
+
+# Determine the directory for this session
+if [[ "$selected" == "dotfiles" ]]; then
+    session_dir="$HOME/dotfiles"
+elif [[ -d "$HOME/code/$selected" ]]; then
+    session_dir="$HOME/code/$selected"
+else
+    # Fallback: try to find a matching directory or use ~/code/selected
+    session_dir="$HOME/code/$selected"
+fi
+
+# Check if session exists (in case user typed a name without selecting)
+if tmux has-session -t="$session_name" 2>/dev/null; then
+    is_existing=true
+fi
+
+# Create session if it doesn't exist
+if [[ "$is_existing" == false ]]; then
+    if [[ ! -d "$session_dir" ]]; then
+        echo "Error: $session_dir does not exist"
+        # Suggest similar directories
+        similar=$(find "$HOME/code" -maxdepth 1 -type d -name "*${selected}*" 2>/dev/null | head -5)
+        if [[ -n "$similar" ]]; then
+            echo "Did you mean one of these?"
+            echo "$similar" | xargs -I{} basename {}
+        fi
+        read -n 1 -s -r -p "Press any key to continue..."
+        exit 1
+    fi
+    tmux new-session -d -s "$session_name" -c "$session_dir"
+fi
+
+# Switch to the session
+tmux switch-client -t "$session_name"
