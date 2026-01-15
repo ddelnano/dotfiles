@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dotfiles_dir="$HOME"/dotfiles
+if [ "$PWD" = "$dotfiles_dir" ]; then
+  "$dotfiles_dir"/.bin/save_code_extensions
+  git add vscode/extensions vscode/cursor-extensions
+fi

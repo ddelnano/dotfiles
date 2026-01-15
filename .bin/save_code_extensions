@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CODE_BIN="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
+CURSOR_BIN="/Applications/Cursor.app/Contents/Resources/app/bin/cursor"
+
+echo "Saving VSCode extensions..."
+"$CODE_BIN" --list-extensions > "$HOME"/dotfiles/vscode/extensions
+
+echo "Saving Cursor extensions..."
+"$CURSOR_BIN" --list-extensions > "$HOME"/dotfiles/vscode/cursor-extensions
